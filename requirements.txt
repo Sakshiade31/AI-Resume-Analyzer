@@ -1,0 +1,7 @@
+Flask
+flask-cors
+pypdf
+joblib
+scikit-learn
+numpy
+scipy

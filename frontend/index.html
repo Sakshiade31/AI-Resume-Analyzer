@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Resume Analyzer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>AI Resume Analyzer</h1>
+
+        <p class="subtitle">
+            Upload your resume and let AI analyze your job category,
+            skills, and suitable roles.
+        </p>
+
+        <div class="upload-box">
+
+            <input
+                type="file"
+                id="resumeInput"
+                accept=".pdf"
+            >
+
+            <button id="analyzeBtn">
+                Analyze Resume
+            </button>
+
+        </div>
+
+        <p id="status"></p>
+
+        <div id="result" class="result-container">
+
+            <div class="card">
+                <h2>Predicted Category</h2>
+                <p id="category">-</p>
+            </div>
+
+            <div class="card">
+                <h2>Detected Skills</h2>
+                <div id="skills" class="skills-container">
+                    -
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Suggested Roles</h2>
+                <div id="roles">
+                    -
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
