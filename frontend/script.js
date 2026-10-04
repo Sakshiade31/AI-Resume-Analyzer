@@ -34,7 +34,7 @@ analyzeBtn.addEventListener("click", async () => {
     try {
 
         const response = await fetch(
-            "http://127.0.0.1:5000/analyze",
+            "https://ai-resume-analyzer-10r8.onrender.com",
             {
                 method: "POST",
                 body: formData
